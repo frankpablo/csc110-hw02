@@ -9,7 +9,9 @@ References: (anything you checked to solve this)
 def read_two_ints():
   # the return shown below is a placeholder to make sure this runs
   # TODO: complete the function instead of the line shown below
-  return 1, 2
+  a = int (input ("give me x: "))
+  b = int (input ("give me y: "))
+  return a, b
 
 # Task 2.1:
 #  Complete the function "compute_multadd" below:
@@ -32,6 +34,7 @@ def main ():
   #  store the returned values into two variables: x and y
 
   # TODO: add your call instead of this line
+  x, y = read_two_ints()
 
   # Task 2.2:
   #  Add one line below to call multadd (note that it returns one value)
