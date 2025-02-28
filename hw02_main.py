@@ -18,7 +18,8 @@ def read_two_ints():
 def compute_multadd(a, b):
   # the pass shown below is a placeholder to make sure this runs
   # TODO: complete the function instead of the line shown below
-  pass
+  mul = a * b
+  return mul # this is NOT the correct return 
 
 # Task 3.1:
 #  Complete the function "print_fancy" below:
