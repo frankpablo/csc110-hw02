@@ -1,5 +1,5 @@
 import pytest
-import hw02_main  # Import the module here
+import hw02  # Import the module here
 
 # Part 1
 # ===========
@@ -14,7 +14,7 @@ def test_1_1_read_two_ints(capsys, monkeypatch):
 
         #   import hw01_main  # Import the module here
 
-        ret1a, ret1b = hw02_main.read_two_ints()
+        ret1a, ret1b = hw02.read_two_ints()
         captured = capsys.readouterr()
 
         assert ret1a == exp1a, "Tip: Did you cast the x value to int?"
@@ -31,7 +31,7 @@ def test_1_2_read_two_ints(capsys, monkeypatch):
 
         #   import hw01_main  # Import the module here
 
-        ret1a, ret1b = hw02_main.read_two_ints()
+        ret1a, ret1b = hw02.read_two_ints()
         captured = capsys.readouterr()
 
         assert ret1a == exp1a, "Tip: Did you cast the x value to int?"
@@ -48,7 +48,7 @@ def test_2_1_compute_multadd(capsys, monkeypatch):
 
         #   import hw01_main  # Import the module here
 
-        ret2 = hw02_main.compute_multadd(10, 15)
+        ret2 = hw02.compute_multadd(10, 15)
         captured = capsys.readouterr()
 
         assert ret2 == exp2, "Tip: Is the expression correct (value and type)?"
@@ -66,7 +66,7 @@ def test_2_2_compute_multadd(capsys, monkeypatch):
 
         #   import hw01_main  # Import the module here
 
-        ret2 = hw02_main.compute_multadd(8, 2)
+        ret2 = hw02.compute_multadd(8, 2)
         captured = capsys.readouterr()
 
         assert ret2 == exp2, "Tip: Is the expression correct (value and type)?"
@@ -75,7 +75,7 @@ def test_2_2_compute_multadd(capsys, monkeypatch):
 
 
 def test_3_1_print_fancy(capsys):
-    hw02_main.print_fancy(10, 15, 6.0)
+    hw02.print_fancy(10, 15, 6.0)
     captured = capsys.readouterr()
     assert 16*"*" in captured.out, "Tip: does your fancy printout begin with 16 asteriscs '*' (check spaces)?"
     assert "RESULTS:" in captured.out, "Tip: does your fancy printout have the string 'RESULTS:' (check spaces, colon)?"
@@ -85,7 +85,7 @@ def test_3_1_print_fancy(capsys):
     assert 16*"=" in captured.out, "Tip: does your fancy printout end with 16 equal signs '=' (check spaces)?"
 
 def test_3_2_print_fancy(capsys):
-    hw02_main.print_fancy(8, 2, 1.6)
+    hw02.print_fancy(8, 2, 1.6)
     captured = capsys.readouterr()
     assert 16*"*" in captured.out, "Tip: does your fancy printout begin with 16 asteriscs '*' (check spaces)?"
     assert "RESULTS:" in captured.out, "Tip: does your fancy printout have the string 'RESULTS:' (check spaces, colon)?"
