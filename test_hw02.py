@@ -1,4 +1,3 @@
-import pytest
 import hw02  # Import the module here
 
 # Part 1
