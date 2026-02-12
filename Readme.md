@@ -1,30 +1,12 @@
----
-title: |
-  \vspace{-2cm} CSC 110\
-  Introduction to Computer Science
-subtitle: |
-  **Homework Assignment 2**\
-  Input and Output with Functions
-geometry: margin=2cm 
-header-includes: |
-  \setlength{\headsep}{1cm}
-  \hypersetup{colorlinks=true,
-    urlcolor=[RGB]{6,69,173},
-    linkcolor=[RGB]{6,69,173}}  
-  \usepackage{color}  
-output:
-  pdf_document:
-    highlight-style: monochrome
----
-\vspace{-5\baselineskip}
+# Homework Assignment 2
 
-**Due: Before Lecture 11**
- 
+**Due: after Lecture 11 before 10PM**
+
 *Note: Homework Assignment 2 should be completed individually.*
 
-For this homework you need to complete three tasks: 
+For this homework you need to complete three tasks:
 
-1) Make the `read_two_ints(...)` function and call it inside `main` where indicated. 
+1) Make the `read_two_ints(...)` function and call it inside `main` where indicated.
 2) Make the `compute_multadd(...)` function and call it inside `main` where indicated.
 3) Make the `print_fancy(...)` function and call it inside `main` where indicated.
 
@@ -38,7 +20,7 @@ Any tests are very strict with respect to the format of requested prompts and pr
 
 The objective of this function is to read two inputs from the user, cast them to integers, and return them. The steps are detailed below:
 
-  * Remove the `return 1, 2` line and instead: 
+  * Remove the `return 1, 2` line and instead:
   * You should use the `input` function to read one number using the following prompt:
   `"give me x: "`; Note that 1) there is a space after the colon, and 2) whatever is read is a String.
   * Cast the read variable into another by using the `int` function.
@@ -51,7 +33,7 @@ The objective of this function is to read two inputs from the user, cast them to
 ### Part 1.2: call the function
 
   * Add a call to `read_two_ints` where indicated, inside `main()`
-  * The call should invoke read_two_ints (with no arguments) and assign, as output, the two output values into two variables `x` and `y`. 
+  * The call should invoke read_two_ints (with no arguments) and assign, as output, the two output values into two variables `x` and `y`.
   * Note that, to "catch" multiple returned values, you need to use enough variables. Example: you know some function `foo()` returns two values, and you want to call them `n` and `m`, then, you use the statement:\
   `n, m =foo()`
 
@@ -63,13 +45,10 @@ The purpose of multadd is to calculate and print the parts of an operation on tw
 
 $\frac{a * b}{a + b}$
 
-<!-- ![multadd](multadd.png){width="150"} -->
 
-<!-- <img src="multadd.png" alt="multadd" width="200px" /> -->
+In the following instructions, the notation `<something>` indicates a placeholder for something you need to calculate yourself.
 
-In the following instructions, the notation `<something>` indicates a placeholder for something you need to calculate yourself. 
-
-You need to do the following: 
+You need to do the following:
 
   1. locate the function with name `compute_multadd`;
   2. verify it accepts two parameters, `a`, and `b`;
@@ -94,9 +73,9 @@ The call should invoke compute_multadd with two arguments (`x` and `y`) and assi
 
 ### Part 3.1: define the function
 
-The purpose of print_fancy is to print the inputs obtained and the result of multadd in a fancy format. 
+The purpose of print_fancy is to print the inputs obtained and the result of multadd in a fancy format.
 
-You need to do the following: 
+You need to do the following:
 
   1. locate the function with name `print_fancy`;
   2. verify it accepts three parameters, `a`, `b`, and `ab_multadd`;
@@ -192,9 +171,7 @@ The End
 ### General
 The submission:
 
-<!-- * includes a header with the name of any peers and any references (or -10%) -->
 * runs without syntax errors (or -50%)
-<!-- * uses appropriate, informative variable names (or -10%) -->
 * adds a few small but informative comments (or -10%)
 
 ### Operations
@@ -202,20 +179,28 @@ The program:
 
   * Passes all 6 tests (or lose 15% per missed test).
 
-<!-- To pass all tests:
+  ### Grading criteria:
 
-* prints the error message for words that are too short
-* prints the error message for more than one word
-* after an error, it should print the correct error message and repeat the request for a valid word (because of the loop)
-* prints out the count message with the correct count for the test word 'not'
-* prints out the count message with the correct count for the test word 'fear' -->
+  Note: before submitting, you should check all the boxes that you actually completed like this:
+
+    - [x] this is a checked box
+
+  The submission (check boxes after you complete each step):
+
+    - [ ] you added your name to the top comments of the python file
+    - [ ] runs without syntax errors (or -50%)
+    - [ ] adds a few small but informative comments (or -5%)
+    - [ ] adds docstrings to each function (or -5%)
+    - [ ] Passes all tests (or lose 15% per missed test). If you do not pass all tests, do not check this box
+    - [ ] You checked the correct boxes
+
 
 ## Submitting
 To submit, remember that you need to:
 
   * Stage all changes for tracking (that is, press the  + button next to the file where you've made changes), then
   * add a commit message that indicates what you've done so far (e.g. "finished part 1", or "completed the hw")
-  * then press the green button to commit 
+  * then press the green button to commit
   * After you've done all the commits you need to do, you can press the green button to sync.
 
   Note that you can commit and push every time, which is OK.
