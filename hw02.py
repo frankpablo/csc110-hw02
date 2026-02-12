@@ -1,6 +1,7 @@
 # Task 1.1:
 #  Complete the function "read_two_ints" below:
 def read_two_ints():
+    # ADD a Docstring for this function
     # the return shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
     return 1, 2
@@ -8,6 +9,7 @@ def read_two_ints():
 # Task 2.1:
 #  Complete the function "compute_multadd" below:
 def compute_multadd(a, b):
+    # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
     pass
@@ -15,11 +17,13 @@ def compute_multadd(a, b):
 # Task 3.1:
 #  Complete the function "print_fancy" below:
 def print_fancy(a, b, ab_multadd):
+    # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
     pass
 
 def main ():
+    # ADD a Docstring for this function
     # Task 1.2:
     #  Add one line below to call read_two_ints (note that it returns two values)
     #  the call should provide no arguments
